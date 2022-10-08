@@ -23,3 +23,5 @@
 - Don't just CTRL+C CRTL+V the project put some of your own effort and Learn in Public so that it will help you to build your profile and Develop project as well.
 
 ### [LICENSE](https://github.com/jay-2000/Open-source-hacktoberfest/blob/main/LICENSE)
+
+### Don't forget to star  ⭐
