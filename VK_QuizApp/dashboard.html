@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz HallOfFame</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+
+    <div class="hof-header-container">
+        <div class="hof-header">
+            <h1>Hall Of Fame</h1>
+            <h3>Repeat the quiz to get featured in below board! 🎆</h3>
+        </div>
+        <button class="hof-repeat-btn" id="repeat-btn">Repeat</button>
+    </div>
+    <table id= "result-board">
+        <tr>
+            <th>Player name</th>
+            <th>Score</th>
+        </tr>
+    </table>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    <script src="hallOfFame.js"></script>
+</body>
+</html>

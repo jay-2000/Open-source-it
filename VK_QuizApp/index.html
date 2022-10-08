@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz App</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body>
+    <div class="heading-container">
+      <h1>Welcome to my Quiz App where you can test your IQ 😇</h1>
+    </div>
+    <div class="playerSelection-container">
+      <div class="player-name-container">
+        <label for="player_name">Enter your name: </label>
+        <input type="text" class="player_name_text" id="player_name_text" placeholder="susavi" />
+      </div>
+      <div class="player-dp-container">
+        <ul>
+          <li>
+            <input type="radio" id="boy_dp" class="dp" name="dp" />
+            <label for="boy_dp" class="boy_dp">boy 👦</label>
+          </li>
+          <li>
+            <label for="girl_dp" class="girl_dp">girl 👧</label>
+            <input type="radio" id="girl_dp" class="dp" name="dp" />
+          </li>
+        </ul>
+      </div>
+      <button id="home_submit">Enter Quiz</button>
+    </div>
+
+    <footer>
+      <div class="copyright">copyright © 2021-present</div>
+      <div class="made-by">Made by js vignesh kanna with ❤</div>
+      <div class="made-by">
+        <a href="https://www.buymeacoffee.com/jsvigneshkanna" target="_blank" rel="noopener noreferrer">
+          But me a coffee if you like this game 🍵</a
+        >
+      </div>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
