@@ -1,0 +1,118 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;600;700&family=Paytone+One&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #1f2833;
+        }
+        .box{
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: #0b0c10;
+            margin: 8px auto;
+            width: 50%;
+            height: 96vh;
+        }
+        .form-group textarea{
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+            height: 150px;
+            font-size: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .container button{
+            display: inline-block;
+            width: 33%;
+            height: 40px;
+            margin: 15px 15px;
+            border-radius: 5px;
+            font-family: 'Josefin Slab', serif;
+            font-weight: 900;
+            font-size: 20px;
+            background-color: rgb(7, 43, 46);
+            color: rgb(99, 228, 245);
+            
+        }
+        .container button:hover{
+            background-color: #0f463e;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            width: 85%;
+            margin: 20px auto;
+        }
+        .box1 h1{
+            text-align: center;
+            color: #80f7e7;
+            font-family: 'Sawarabi Gothic', sans-serif;
+            font-weight: 1000;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 48px;
+            margin-left: -4px ;
+            text-shadow: 0 0 30px rgb(59, 121, 103);
+        }
+        .box h2{
+            text-align: justify;
+            margin: 10px 67px;
+            color:#66cfc1;
+            font-family: 'Josefin Slab', serif;
+            margin-left: 73px;
+            margin-right: 79px;
+        }
+        .out{
+            display: flex;
+            width: 77%;
+            height: 150px;
+            margin: 15px auto;
+            padding-left: 30px;
+            border: 2px solid black;
+            background-color: white;
+            font-size: 30px;
+            border-radius: 8px;
+        }
+        .box1{
+            display: flex;
+            justify-content: center;
+            border: 4px solid #254d47;
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <h1>BITWISE XOR CALCULATOR</h1>
+        </div>
+        <h2>Pairwise - Enter the elements in sequence with single spaces.</h2>
+        <h2>Random - Enter the elements in single spaced fashion and enter different in different lines.</h2>
+        <form>
+            <div class="form-group">
+                <textarea name="text" id="" cols="30" rows="10" placeholder="">{{inp}}</textarea>
+            </div>
+            <div class="out">
+                <pre>{{r}}</pre>
+            </div>
+            <div class="container">
+                <button type="submit" formaction="/" class="btn">RESET</button>
+                <button type="submit" formaction="/submit" class="btn" name="pairwise">PAIRWISE</button>
+                <button type="submit" formaction="/random" class="btn" name="random">RANDOM</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
