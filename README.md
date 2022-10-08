@@ -10,4 +10,8 @@
 
 - You can create your own Beginner Friendly WEB based mini-project 
 
+### Who Can Contribute
+
+- OPEN FOR EACH AND EVERY PERSON who wants to get involve in OPEN-SOURCE world
+
 ### [LICENSE](https://github.com/jay-2000/Open-source-hacktoberfest/blob/main/LICENSE)
