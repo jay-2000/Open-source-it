@@ -1,0 +1,23 @@
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#000000;
+    
+}
+.dark-theme{
+    --primary-color:black;
+    --secondary-color:white;
+}
+body {
+    padding: 25px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 25px;
+}
+#icon{
+    width:30px;
+    position: absolute;
+    right :10%;
+    top:12%;
+    cursor:pointer;
+    transition:.4s;
+}
