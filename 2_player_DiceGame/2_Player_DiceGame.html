@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Player Dice Game </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            margin:auto;
+            text-align: center;
+            background-image:radial-gradient(white,rgb(26, 177, 204) 90%);
+        }
+        h1{
+         font-family: 'Lobster' , cursive;
+         font-size:40px;
+         margin:10px auto;
+         color:#fd0015;
+        }
+        #roll{
+            width:100px;
+            height:30px;
+            margin:20px;
+            font-size: 1rem;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight:700;color:white;
+            border:none;
+            background:#21d4fd;
+            background-image:linear-gradient(19deg,red 0%,#b721ff 100%) ;
+            cursor:pointer;
+        }
+        #playerone
+        {
+            font-family:cursive;
+            font-size:30px;
+            display:inline-block;
+            margin-left:70px;
+            color:rgb(185, 17, 135);
+        }
+        #playertwo
+        {
+            font-family:cursive;
+            font-size:30px;
+            display:inline-block;
+            margin-left:70px; 
+            color:rgb(185, 17, 135);
+        }
+    </style>
+</head>
+<body>
+    <h1>Click me!</h1>
+    <h2 id="playerone">Player1</h2>
+    <div id="result"><img src="E:\Projects/1.png"></div>
+    <h2 id="playertwo"> Player2</h2>
+    <div id="result1"><img src="E:\Projects/2.png"></div>
+    <button" onclick="roll()" id="roll">Play again</button>
+    <div>    <p1> Made By KUNAL BHADE</p1>    </div>
+    <script>
+        function roll()
+        {
+            document.getElementById('result').innerHTML="<img src='E:\Projects/loader.gif'/>";
+           document.getElementById('result1').innerHTML="<img src='E:\Projects/loader.gif'/>";
+            setTimeout(function () {
+            var random1= Math.floor(Math.random()*6)+1;
+            var randomimg1=document.getElementById('result').innerHTML="<img src='E:\Projects/"+random1+".png'/>";
+            var random2= Math.floor(Math.random()*6)+1;
+            var randomimg2=document.getElementById('result1').innerHTML="<img src='E:\Projects/"+random2+".png'/>";
+            
+            if(random1>random2)
+            {
+                document.querySelector("h1").innerHTML="player One wins";
+            }
+            else if(random1<random2)
+            {
+                document.querySelector("h1").innerHTML="player Two wins";
+            }
+            else
+            {    
+            document.querySelector("h1").innerHTML="Draw";
+            }
+            },2000);
+        }
+         </script>
+</body>
+</html>
