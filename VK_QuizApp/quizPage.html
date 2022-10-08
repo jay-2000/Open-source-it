@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body>
+    <div class="score-container">
+      <p>Score:</p>
+      <p class="score" id="score">0</p>
+    </div>
+    <div class="player-container">
+      <p class="player-name" id="playerName"></p>
+      <p class="player-dp" id="playerDp"></p>
+    </div>
+    <div class="quiz-container">
+      <div class="quiz-section">
+        <h2 id="question">Question</h2>
+        <div id="answer-container">
+          <ul>
+            <li>
+              <input type="radio" id="a" name="answer" class="answer" />
+              <label id="a_text" for="a">option_a</label>
+              <span id="a_res"></span>
+            </li>
+            <li>
+              <input type="radio" id="b" name="answer" class="answer" />
+              <label id="b_text" for="b">option_b</label>
+              <span id="b_res"></span>
+            </li>
+            <li>
+              <input type="radio" id="c" name="answer" class="answer" />
+              <label id="c_text" for="c">option_c</label>
+              <span id="c_res"></span>
+            </li>
+            <li>
+              <input type="radio" id="d" name="answer" class="answer" />
+              <label id="d_text" for="d">option_d</label>
+              <span id="d_res"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button id="quiz_submit">Submit & Next</button>
+    </div>
+    <footer>
+      <div class="made-by">
+        Made by js vignesh kanna with ❤
+        <a href="https://www.buymeacoffee.com/jsvigneshkanna" target="_blank" rel="noopener noreferrer">
+          But me a coffee if you like this game 🍵</a
+        >
+      </div>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+    <script src="quizScript.js"></script>
+  </body>
+</html>
