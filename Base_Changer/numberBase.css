@@ -1,0 +1,226 @@
+ .heading
+  {  
+      text-align: center;
+  }
+   .outerbox
+  {
+    display: block;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+  }
+
+  .herobox
+  {
+    display: flex;
+    background: linear-gradient(90deg, #E91E63,#FF5722);
+    padding: 2rem 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .herotextbox
+  {
+    margin: 0 6rem;
+    color: white;
+  }
+  .herotextbox p
+  {
+    max-width: 43rem;
+  }
+ 
+/*basechangerbox*/
+#inputtext
+{
+  padding: 0.5rem;
+    border-radius: 0.4rem;
+    border: 1px solid #abaaaa;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #3b3939;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+#inputtext::placeholder
+{
+  color: #bfbaba;
+    font-weight: 400;
+}
+.convbox
+{
+  color: white;
+  background: #ff9f43;
+    padding: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    /*min-width: 18rem;*/
+}
+#baseFrom,#baseTo
+{
+  background: white;
+  font-size: 1rem;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    font-weight: 500;
+    color: #707070;
+    border:none;
+}
+.buttonbox
+{
+      display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+        margin: 1.5rem 0;
+}
+.calcbtn
+{
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+}
+.calcbig
+{
+  width: 10rem;
+}
+.clearbig
+{
+  width: 8rem;
+}
+.outputcont
+{
+  background: #7a7979;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.outputcont p
+{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0;
+    overflow-wrap: break-word;
+    width: 16rem;
+    text-align: left;
+}
+.outputcont button
+{
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+#outputtextinp
+{
+  position: absolute;
+  left: -2000px;
+}
+
+.numberbasebox
+{
+  text-align: center;
+  box-shadow: 1px 2px 20px #2828288c;
+  margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+
+
+.entertext
+{
+  margin-bottom: 0.6rem;
+  color: grey;
+}
+
+*:focus {
+    outline: none;
+}
+
+.liststyle
+{
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #e1e1e1;
+  list-style: inside;
+  padding-left: 0;
+}
+
+
+.footer
+{
+        position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #3c3c3c;
+    padding: 0.7rem;
+    color: white;
+    text-align: center;
+}
+.footer p
+{
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 300;
+    margin-bottom: 0;
+
+}
+
+  
+ @media only screen and (max-width: 500px){
+    .herobox
+    {
+      flex-direction: column;
+    padding: 1rem;
+    }
+    .heroimgbox
+    {
+      text-align: center;
+    }
+    .herotextbox
+    {
+      margin: 1rem;
+    }
+    h1
+    {
+      font-size: 2rem;
+    text-align: center;
+    }
+    .outerbox {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+   .footer p
+    {
+        font-size: 1rem;
+    }
+    /*.outputcont p
+    {
+      width: 15rem;
+    }*/
+    .convbox
+    {
+      padding: 0.5rem;
+    font-size: 0.9rem;
+    }
+    .calcbtn {
+    font-size: 1rem;
+}
+.calcbig {
+    width: 8rem;
+}
+.clearbig {
+    width: 6rem;
+}
+#baseFrom, #baseTo {
+  font-size: 0.9rem;
+}
+.numberbasebox
+{
+  width: 90%;
+}
+}
