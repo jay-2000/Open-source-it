@@ -4,7 +4,7 @@
 
 ### How To Contribute
 
-[checkout here](https://github.com/jay-2000/Open-source-hacktoberfest/blob/main/CONTRIBUTING.md)
+[Checkout here](https://github.com/jay-2000/Open-source-hacktoberfest/blob/main/CONTRIBUTING.md)
 
 ### What TO Contribute
 
@@ -13,5 +13,11 @@
 ### Who Can Contribute
 
 - OPEN FOR EACH AND EVERY PERSON who wants to get involve in OPEN-SOURCE world
+
+### Things to Remember
+
+- while submitting the PR(Pull Request) attach the screenshot or demo of your project in PR Description / comment.
+
+- Don't just CTRL+C CRTL+V the project put some of your own effort and Learn in Public.
 
 ### [LICENSE](https://github.com/jay-2000/Open-source-hacktoberfest/blob/main/LICENSE)
