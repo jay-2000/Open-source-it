@@ -1,0 +1,142 @@
+h1 {
+    text-align: center;
+}
+
+h4 {
+    text-align: right;
+}
+
+table {
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+td {
+    width: 78.5px;
+    height: 99.5px;
+    text-align: center;
+}
+
+button {
+    font-size: 15px;
+    display: block;
+    margin: auto;
+}
+
+.borderRight {
+    border-right: 2px solid;
+}
+
+.borderLeft {
+    border-left: 2px solid;
+}
+
+.borderTop {
+    border-top: 2px solid;
+}
+
+.borderBottom {
+    border-bottom: 2px solid;
+}
+
+.one {
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.title {
+    color: coral;
+    font-family: 'Droid serlif', serif;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 44px;
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+.contact {
+    background-color: var(--background);
+    display: block;
+    width: 500px;
+    min-height: 90px;
+    border: 3px solid var(--primary);
+    padding: 2px;
+    margin: calc(50vh - 30px) auto 0 auto;
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+          20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 
+          30px -30px 0 -3px var(--background), 30px -30px var(--orange), 
+          40px -40px 0 -3px var(--background), 40px -40px var(--red); 
+    transition: box-shadow 1s, top 1s, left 1s;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  
+  .contact:hover {
+    top: -40px;
+    left: 40px;
+    box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--green),
+        0 0 0 -3px var(--background), 0 0 0 0  var(--yellow),
+        0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
+        0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  :root {
+    --primary: #555BFF;
+    --secondary: #22D2A0;
+    --background: white;
+    --green: #1FC11B;
+    --yellow: #FFD913;
+    --orange: #FF9C55;
+    --red: #FF5555;
+  } 
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: radial-gradient(var(--secondary) 30%, var(--background) 30%);
+    background-size: 2px 3px;
+    font-family: "Archivo", sans-serif;
+    color: var(--primary);
+  }
+  
+  .contact p {
+    font-size: 11px;
+    text-transform: lowercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+  
+  .contact h2 {
+    font-size: 14px;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  
+  .palyground {
+    background-color: rgba(128, 128, 128, 0.562);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 5px solid black;
+    margin: 10px;
+    padding: 10px;
+}
