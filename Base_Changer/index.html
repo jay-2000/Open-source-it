@@ -1,0 +1,95 @@
+<!--
+Contributor Details:
+Name: RahulSahOfficial
+mail:https://developersah@gmail.com
+GitHub profile link : https://github.com/RahulSahOfficial
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#6610f2" />
+    <link rel="icon" type="image/ico" href="../../favicon.ico" />
+    <title>Number Base Converter | Utility Website</title>
+    <!--  Styles  -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+          />
+          <link rel="stylesheet" href="numberBase.css" />
+        </head>
+        <body>
+          <div class="herobox col align-self-center">
+            <div class="heroimgbox">
+              <img class="animate__animated animate__heartBeat animate__slower animate__infinite  infinite" src="https://img.icons8.com/color/135/000000/123.png"/>
+            </div>
+            <div class="herotextbox">
+              <h1 class="text-white mb-3">🔢 Number Base Converter</h1>
+              <p class="lead mb-2">You can use this tool to convert your numbers from one base to another. </p>
+              <ul class="liststyle">
+                <li>Binary (2)</li>
+                <li>Octal (8)</li>
+                <li>Decimal (10)</li>
+                <li>HexaDecimal (16)</li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="outerbox">
+            <div class="numberbasebox">
+              <p class="entertext">Enter your number</p>
+              <input type="text" autocomplete="off" id="inputtext" placeholder="101010">
+              <div class="convbox">
+                <select name="baseFrom" id="baseFrom">
+                  <option value="2" selected>2  (Binary)</option>
+                  <option value="8">8  (Octal)</option>
+                  <option value="10">10 (Decimal)</option>
+                  <option value="16">16 (Hexa)</option>
+                </select>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                <select name="baseTo" id="baseTo">
+                  <option value="2">2  (Binary)</option>
+                  <option value="8">8  (Octal)</option>
+                  <option value="10" selected>10 (Decimal)</option>
+                  <option value="16">16 (Hexa)</option>
+                </select>
+              </div>
+              <div class="buttonbox">
+                <button class="btn btn-primary calcbtn calcbig" onclick="convertbase()">Calculate &nbsp;<i class="fa fa-calculator" aria-hidden="true"></i></button>
+                <button class="btn btn-danger calcbtn clearbig" onclick="clearall()">Clear &nbsp;<i class="fa fa-trash" aria-hidden="true"></i></button>
+              </div>
+              <p class="entertext">Converted number</p>
+              <div class="outputcont">
+                <p id="outputcontp">(<span id="outputtext">42</span>)<sub id="baseconans">10</sub></p>
+                <button class="btn btn-light" onclick="copytext()"><i class="fa fa-clipboard" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+          <input type="text" id="outputtextinp" value="4276" readonly>
+          <!-- for click to copy -->
+          
+          
+          <div class="footer">
+            <p>© Copyright 2022 &nbsp;&nbsp;|&nbsp;&nbsp; Created By Rahul Sah</p>
+          </div>
+
+
+          <script src="numberBase.js"></script>
+          <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </body>
+      </html>
