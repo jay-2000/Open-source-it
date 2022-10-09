@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+.container-fluid {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(28, 28, 28);
+}
+
+.weather-card {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    48deg,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(27, 27, 27, 1) 85%,
+    rgba(37, 37, 37, 1) 100%
+  );
+  min-width: fit-content;
+  max-width: 300px;
+  border: 1.5px solid rgb(46, 46, 46);
+  border-radius: 12px;
+  padding: 1.2rem !important;
+  padding-bottom: 0 !important;
+  transition: 0.3s ease;
+}
+
+.weather-card:hover {
+  transform: scale(1.03);
+}
+
+.container .topbar .city-div {
+  background-color: rgb(30, 30, 30);
+  width: fit-content;
+  padding: 3px 18px;
+  border: 1.5px solid rgb(54, 54, 54);
+  border-radius: 5px;
+}
+
+.container .topbar .city-div p {
+  font-size: 0.7rem;
+  color: white;
+  font-weight: 500;
+}
+
+.container .topbar .country-div p {
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.container .icon-div p {
+  color: rgb(96, 96, 96);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+.container .icon-div img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  -webkit-user-drag: none;
+  animation: float 2s infinite alternate;
+}
+
+.container .temp {
+  color: #fff;
+  font-size: 4.5rem;
+}
+
+.container .info .info-child {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0;
+}
+
+.container .info .info-child i {
+  color: rgb(172, 172, 172);
+}
+
+.container .info .info-child .info-text {
+  color: #fff;
+  text-align: center;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+}
+
+.searchBar input {
+  outline: none;
+  background-color: rgb(30, 30, 30);
+  border: 1.5px solid rgb(54, 54, 54);
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-right: 1rem;
+  height: 2.5rem;
+  min-width: 220px;
+  position: relative;
+}
+
+.searchBar input:focus {
+  border: 1.5px solid #fff;
+}
+
+.searchBar button {
+  background-color: rgb(76, 76, 76);
+  padding: 0.5rem 0.8rem;
+  border: 0;
+  border-radius: 10px;
+}
+
+.searchBar button:hover {
+  background-color: #000;
+}
+
+.searchBar button i {
+  color: rgb(255, 255, 255);
+}
+
+.spinner-border {
+  width: 1rem;
+  height: 1rem;
+  border-width: 3px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}

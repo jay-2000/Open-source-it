@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div
+      class="container-fluid px-3 m-0 d-flex align-items-center justify-content-center flex-column"
+    >
+      <div class="searchBar mb-4 w-100 d-flex justify-content-center">
+        <input
+          type="text"
+          id="search"
+          value=""
+          placeholder="Search city here..."
+          autocomplete="off"
+        />
+        <button onclick="handleSubmit()" id="searchButton">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="container weather-card">
+        <div class="topbar d-flex align-items-center justify-content-between">
+          <div class="city-div">
+            <p id="city">Mumbai</p>
+          </div>
+          <div class="country-div">
+            <p id="country">IN</p>
+          </div>
+        </div>
+
+        <div
+          class="icon-div d-flex align-items-center justify-content-center py-4 flex-column"
+        >
+          <img src="" alt="icon" id="weather-icon" />
+          <p id="weather">Sunny</p>
+        </div>
+
+        <div class="info-div d-flex align-items-center justify-content-between">
+          <div class="info">
+            <div class="info-child">
+              <i class="fa-solid fa-wind"></i>
+              <p class="info-text"><span id="wind">11</span> m/s</p>
+            </div>
+            <div class="info-child">
+              <i class="fa-solid fa-droplet ms-1"></i>
+              <p class="info-text"><span id="humidity">95</span>%</p>
+            </div>
+            <div class="info-child">
+              <i class="fa-solid fa-gauge-simple-high"></i>
+              <p class="info-text"><span id="atmpressure">1.5</span>hPa</p>
+            </div>
+          </div>
+          <div class="temp">
+            <p><span id="temp">35</span>&deg;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
