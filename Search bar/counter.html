@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body,html{
+            display: grid;
+            min-height: 100%;
+            place-items: center;
+            background-color: #EFF4F5;
+        }
+        .card{
+            width: 600px;
+            height:350px;
+            box-shadow: 10px 10px 15px rgb(192,183,183),-10px -10px 15px white;
+            display: flex;
+            flex-direction:column ;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            font-weight: bolder;
+            background-color:darkslategrey;
+
+        }
+        .name{
+            font-size: 3rem;
+        }
+        #counter{
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+        .prevBtn,.nextBtn{
+            font-size: 1.3rem;
+            outline: none;
+            padding: 0.7rem 1.5rem;
+            cursor: pointer;
+            margin: 0 2rem;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2 class="name">Javascript Project</h2>
+        <h4 id="counter">0</h4>
+        <div class="container">
+            <button class="counterBtn prevBtn">Lower</button>
+            <button class="counterBtn nextBtn">Add</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        (function(){
+            const button=document.querySelectorAll('counterBtn');
+            let count=0
+
+            button.forEach(function(button){
+                button.addEventListener('click',function(){
+
+                if(button.classList.contains('prevBtn')){count--}
+                else if(button.classList.contains('nextBtn')){count++}
+
+                const counter=document.querySelector('#counter')
+                counter.textContent=count
+
+                if(count<0){counter.style.color='red'}
+                else if(count>0){counter.style.color='green'}
+
+            })
+        })
+    })
+    </script>
+    
+</body>
+</html>
