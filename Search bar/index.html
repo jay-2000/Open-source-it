@@ -1,0 +1,99 @@
+<!-- <img class="center" id="image" src="https://cdn-icons-png.flaticon.com/512/639/639375.png" height="30px"> -->
+<!-- <input class="center" id="inp" type="text" placeholder="search product"> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/639/639375.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+ background-size:20px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color:cadetblue;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+</style>
+</head>
+<body>
+
+<h2>My Phonebook</h2>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for music.." name="search">
+
+<ul id="myUL" class="myUL">
+  <li class="Music"><a href="#">Raataan Lambiyan, Shershaah (Sung by Asees Kaur and Jubin Nautiyal, composed by Tanishk Bagchi)</a></li>
+  <li class="Music"><a href="#">Param Sundari, Mimi (Sung by Shreya Ghoshal, composed by A. R. Rahman)</a></li>
+  <li class="Music"><a href="#">Baarish Ki Jaaye (Sung and composed by B Praak)</a></li>
+  <li class="Music"><a href="#">Nadiyon Paar, Roohi (Sung by Shamur, Rashmeet Kaur & IP Singh, composed by Sachin-Jigar)</a></li>
+  <li class="Music"><a href="#">Jugnu (Sung by Badshah and Nikhita Gandhi)</a></li>
+  <li class="Music"><a href="#">Ranjha, Shershaah (Sung by B Praak, Jasleen Royal, Romy, and composed by Jasleen Royal)</a></li>
+  <li class="Music"><a href="#">Chhor Denge (Sung by Parampara Tandon, composed by Sachet-Parampara)</a></li>
+  <li class="Music"><a href="#">Lut Gaye (Sung by Jubin Nautiyal, composed by Sachin Bagchi)</a></li>
+  <li class="Music"><a href="#">Paani Paani (Sung by Badshah & Aastha Gill, Composed by Badshah)</a></li>
+  <li class="Music"><a href="#">Phisal Jaa Tu - Haseen Dillruba (Sung by Abhijeet Srivastava and composed by Amit Drivedi)</a></li>
+  <li class="Music"><a href="#">Mann Bharrya 2.0 - Shershaah (Sung and composed by B Praak)</a></li>
+  <li class="Music"><a href="#">Rihayi De - Mimi (Sung and composed by A. R. Rahman)</a></li>
+  <li class="Music"><a href="#">Suna Hai - Sanak (Sung by Shreya Ghoshal, composed by Jeet Gannguli)</a></li>
+  <li class="Music"><a href="#">Kasoor - Dhamaka (Sung and composed by Prateek Kuhad)</a></li>
+  <li class="Music"><a href="#">Thoda Thoda Pyaar (Sung by Stebin Ben, Composed by Nilesh Ahuja)</a></li>
+  <li class="Music"><a href="#">Tu Bhi Sataya Jaayega (Sung and composed by Vishal Mishra)</a></li>
+  <li class="Music"><a href="#">Soch Liya - Radhe Shyam (Sung by Arijit Singh and Mithoon, composed by Mithoon)</a></li>
+  <li class="Music"><a href="#">Lehra Do - 83 (Sung by Arijit Singh, composed by Pritam)</a></li>
+  <li class="Music"><a href="#">Chaka Chaka - Atrangi Re (Sung by Shreya Ghoshal, composed by A R Rahman)</a></li>
+  <li class="Music"><a href="#">Maafi (Sung by Ayushmann Khurrana, composed by Sachin-Jigar)</a></li>
+</ul>
+
+
+<script>
+
+function myFunction() {
+     var input = document.getElementById("myInput").value.toUpperCase();
+     var ul = document.getElementById("myUL");
+     var li = ul.getElementsByTagName("li");
+
+     for (var i = 0; i < li.length; i++) {
+        var a = li[i].getElementsByTagName("a")[0];
+        var txtValue = a.textContent || a.innerText;
+         if (txtValue.toUpperCase().indexOf(input) > -1) {
+             li[i].style.display = "";
+         } else {
+             li[i].style.display = "none";
+         }
+     }
+}
+
+</script>
+</body>
+</html>
